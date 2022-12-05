@@ -3,10 +3,12 @@ import css from "./ScrollTwo.module.css";
 import { getMoreStories } from "../../api/more";
 import MoreStory from "../moreStory/MoreStory";
 import Navbar from "../../component/navbar/Navbar";
+import icon from "../../assets/image/science.png";
+import Image from "next/image";
 
 const ScrollTwo = () => {
   const moreStory = getMoreStories();
-  console.log(moreStory)
+  console.log(moreStory);
   return (
     <div className={css.main}>
       <Navbar />
@@ -48,12 +50,15 @@ const ScrollTwo = () => {
           </div>
         </div>
       </div>
+      
       <div className={css.more_stories_heading}>
+        <div className={css.icon_section}>
+          <Image src={icon} alt="icon" className={css.icon} />
+        </div>
         <div className={css.more_stories_text}>More from Science</div>
       </div>
 
-        <MoreStory stories={moreStory} />
-
+      <MoreStory stories={moreStory} />
     </div>
   );
 };

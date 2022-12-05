@@ -1,21 +1,27 @@
-import React from "react";
-import MoreStory from "../moreStory/MoreStory";
+
 import { getMoreStories } from "../../api/more";
 import css from "./Demo4.module.css";
 import Story from "../story/Story";
-import Navbar from '../../component/navbar/Navbar';
+import Navbar from "../../component/navbar/Navbar";
+import icon from "../../assets/image/science.png";
+import Image from "next/image";
+
 
 const Demo4 = () => {
     const moreStory = getMoreStories();
 
     return (
         <div className={css.main_section}>
+            <Navbar />
+            <div className={css.top_image}>
+                <img
+                    src="https://im.rediff.com/sports/2022/nov/29ron1.jpg?w=670&h=900"
+                    alt="top-image"
+                    className={css.image}
+                />
+            </div>
 
-                <Navbar />            
-                <div className={css.top_image}>
-                    <img src="https://im.rediff.com/sports/2022/nov/29ron1.jpg?w=670&h=900"
-                        alt="top-image" className={css.image} />
-                </div>
+            <div className={css.sticky}>
                 <div className={css.card_block}>
                     <div className={css.card_title}>
                         "Treasure Of Love": Boy Offers Piggy Bank To Rahul Gandhi For Bharat
@@ -31,10 +37,7 @@ const Demo4 = () => {
                         his piggy bank to him during the Bharat Jodo Yatra in Madhya
                         Pradesh. Congress leader Rahul Gandhi on Sunday said sacrifice and
                         selflessness are values inculcated during childhood after Congress
-                        leader Rahul.are values inculcated during childhood after Congress
-                        leader Rahul. Congress leader Rahul Gandhi on Sunday said sacrifice
-                        and selflessness are values inculcated during childhood after a boy
-                        gave his piggy bank to him during the Bharat Jodo Yatra in Madhya
+                        leader Rahul. bank to him during the Bharat Jodo Yatra in Madhya
                         Pradesh. Congress leader Rahul Gandhi on Sunday said sacrifice and
                         selflessness are values inculcated during childhood after Congress
                         leader Rahul.are values inculcated during childhood after Congress
@@ -46,14 +49,16 @@ const Demo4 = () => {
                             <a href="">NDTV</a>
                         </div>
                     </div>
-                
+                </div>
             </div>
 
             <div className={css.more_stories_heading}>
+                <div className={css.icon_section}>
+                    <Image src={icon} alt="icon" className={css.icon} />
+                </div>
                 <div className={css.more_stories_text}>More from science</div>
             </div>
 
-            {/* <MoreStory stories={moreStory} /> */}
             <Story stories={moreStory} />
         </div>
     );

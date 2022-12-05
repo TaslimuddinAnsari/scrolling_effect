@@ -2,7 +2,10 @@ import React from "react";
 import style from "./Demo3.module.css";
 import { getMoreStories } from "../../api/more";
 import MoreStory from "../moreStory/MoreStory";
-import Navbar from '../../component/navbar/Navbar';
+import Navbar from "../../component/navbar/Navbar";
+import icon from "../../assets/image/science.png";
+import Image from "next/image";
+
 
 const Demo3 = () => {
   const moreStory = getMoreStories();
@@ -12,8 +15,9 @@ const Demo3 = () => {
       <Navbar />
       <div className={style.top_content}>
         <div className={style.image_section}>
-          <img src="https://im.rediff.com/sports/2022/nov/29ron1.jpg?w=670&h=900"
-            className={style.top_img} 
+          <img
+            src="https://im.rediff.com/sports/2022/nov/29ron1.jpg?w=670&h=900"
+            className={style.top_img}
           />
         </div>
         <div className={style.card_div}>
@@ -49,6 +53,9 @@ const Demo3 = () => {
         </div>
       </div>
       <div className={style.more_stories_heading}>
+        <div className={style.icon_section}>
+          <Image src={icon} alt="icon" className={style.icon} />
+        </div>
         <div className={style.more_stories_text}>More from science</div>
       </div>
       <MoreStory stories={moreStory} />

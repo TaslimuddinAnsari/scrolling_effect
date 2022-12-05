@@ -1,18 +1,19 @@
 import React from "react";
 import MoreStory from "../moreStory/MoreStory";
-import style from "./Animation.module.css";
+import style from "./Parallax.module.css";
 import { getMoreStories } from "../../api/more";
 import Navbar from "../../component/navbar/Navbar";
+import icon from "../../assets/image/science.png";
+import Image from "next/image";
 
-const Animation = () => {
-
+const Parallax = () => {
   const moreStory = getMoreStories();
 
   return (
-    <div className={style.Animation_container}>
+    <div className={style.parallax_container}>
       <Navbar />
       <div className={style.ele_image}></div>
-      
+
       <div className={style.card_ele}>
         <div className={style.card_title}>
           "Treasure Of Love": Boy Offers Piggy Bank To Rahul Gandhi For Bharat
@@ -44,11 +45,14 @@ const Animation = () => {
         </div>
       </div>
       <div className={style.more_stories_heading}>
+        <div className={style.icon_section}>
+          <Image src={icon} alt="icon" className={style.icon} />
+        </div>
         <div className={style.more_stories_text}>More from science</div>
       </div>
-      <MoreStory stories={moreStory}/>
+      <MoreStory stories={moreStory} />
     </div>
   );
 };
 
-export default Animation;
+export default Parallax;

@@ -35,8 +35,10 @@ const Home = () => {
       {/* <h3>
         <Link href='/scroll-3/ScrollThree' >scroll type-3 </Link>
       </h3> */}
-      <h3><Link href={'/animation/Animation'}>Parallax-design</Link></h3>
-      <h3><Link href={'/demo-4/Demo4'}>Card-sticky</Link></h3>
+      <h3><Link href={'/parallax/Parallax'}>Parallax-design</Link></h3>
+      <h3><Link href={'/demo-4/Demo4'}>Card-Sticky</Link></h3>
+      <h3><Link href={'/demo-5/Demo5'}>Image-and-Card-Sticky</Link></h3>
+
       {/* <h2><Link href='/aos/AOS' >AOS</Link></h2> */}
       <div class="container" id="container">
         <div class="square square-1"></div>
