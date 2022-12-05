@@ -1,0 +1,148 @@
+.body_heading {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Number of lines*/
+    -webkit-box-orient: vertical;
+}
+
+.time_text, .author_text, .body_text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* Number of lines*/
+    -webkit-box-orient: vertical;
+}
+@media screen and (min-width:768px) {
+    .more_stories {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 40px 40px;
+        gap: 20px;
+        flex: none;
+        align-self: stretch;
+        flex-grow: 0;
+        /* z-index: 1; */
+        background-color: var(--Card-Background);
+        /* Width and Height are default from figma due to Fill and Hug property */
+    }
+
+    .card_block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        isolation: isolate;
+        background: var(--Card-Background);
+        box-shadow: 0px 2px 14px rgba(42, 42, 42, 0.24);
+        flex: none;
+        flex-grow: 0;
+        width: 360px;
+        height: 405px;
+
+        position: relative;
+        cursor: pointer; /* Added */
+    }
+
+    .card_image {
+        width: 100%;
+        height: 271px;
+        /* Width is default from figma due to Fill property */
+    }
+    .image {
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+    }
+
+    .card_icon {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        flex: none;
+        flex-grow: 0;
+        z-index: 1;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        width: 80px;
+        height: 80px;
+        /* Width and Height are default from figma due to Hug property */
+
+    }
+
+    .iocn {
+        flex: none;
+        align-self: stretch;
+        flex-grow: 1;
+        z-index: 2;
+    }
+
+    .card_body {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        gap: 10px;
+        flex: none;
+        align-self: stretch;
+        flex-grow: 1;
+        /* z-index: 1; */
+        /* Width and Height default from figma due to Hug property */
+    }
+
+    .body_heading {
+        font-family: var(--Font-Family-2);
+        font-style: normal;
+        font-weight: var(--Font-Weight-1);
+        font-size: var(--Navbar-Text);
+        line-height: 40px;
+        color: var(--Default-Font);
+        flex: none;
+        align-self: stretch;
+        flex-grow: 0;
+        /* Width and Height default from figma due to Fill and Hug property */
+
+    }
+
+    .body_text {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 10px;
+        flex: none;
+        align-self: stretch;
+        flex-grow: 0;
+        /* Width and Height are default from figma due to Fill and Hug Property */
+    }
+
+    .time_text {
+        font-family: var(--Font-Family-1);
+        font-style: normal;
+        font-weight: var(--Font-Weight-3);
+        font-size: var(--Body-Small);
+        line-height: 30px;
+        color: var(--Default-Font);
+        flex: none;
+        flex-grow: 0;
+        /* Width and Height are default from figma due to Hug Property */
+
+    }
+
+    .author_text {
+        font-family: var(--Font-Family-1);
+        font-style: normal;
+        font-weight: var(--Font-Weight-3);
+        font-size: var(--Body-Small);
+        line-height: 30px;
+        color: var(--Secondary-Font);
+        opacity: 0.7;
+        flex: none;
+        flex-grow: 0;
+        /* Width and Height are default from figma due to Hug Property */
+
+    }
+}

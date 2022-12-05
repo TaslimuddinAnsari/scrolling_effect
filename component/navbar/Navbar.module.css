@@ -1,0 +1,391 @@
+.navbar_component{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 40px 40px 40px 40px;
+    gap: 40px;
+    isolation: isolate;
+    flex: none;
+    flex-grow: 0;
+    align-self: stretch;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: var(--Card-Background);
+    /* Width is default from Figma due Hug property */
+}
+.navbar_element{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    gap: 100px;
+    flex: none;
+    flex-grow: 1;
+    z-index: 0;
+    /* Width and Height are default from Figma due Fill and Hug property */
+
+}
+.logo_image_text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 7px;
+    flex: none;
+    flex-grow: 0;
+    height: 40px;
+    /* Width is default from Figma due Hug property */
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 7px;
+    flex: none;
+    flex-grow: 0;
+    width: 30px;
+    height: 35px;
+}
+.logo_image{
+    flex: none;
+    align-self: stretch;
+    flex-grow: 0;
+    width: 30px;
+    height: 35px;
+}
+.logo_text{
+    font-family: var(--Font-Family-2);
+    font-style: normal;
+    font-weight: var(--Font-Weight-1);
+    font-size: var(--Navbar-Text);
+    line-height: 40px;
+    color: var( --Heading-Font);
+    flex: none;
+    flex-grow: 0;
+    /* Width and Height are default from Figma due Hug property */
+
+
+}
+.search_bar{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 30px;
+    border: 2px solid var(--Border);
+    border-radius: 40px;
+    flex: none;
+    flex-grow: 1;
+    /* Width and Height are default from Figma due Hug property */
+
+}
+
+.search_text{
+    font-family: var(--Font-Family-2);
+    font-style: normal;
+    font-weight: var(--Font-Weight-2);
+    font-size: var(--Heading-2);
+    line-height: 30px;
+    color: var(--Secondary-Font);
+    flex: none;
+    flex-grow: 0;
+    border: none;  /* Added for Input tag */
+    outline: none;
+    width: 90%;
+    /* Width and height are default from Figma due Hug property */
+}
+.search_icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    flex: none;
+    flex-grow: 0;
+    width: 40px;
+    height: 40px;
+}
+.search_image{
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+    width: 40px;
+    height: 40px;
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 15px;
+    flex: none;
+    flex-grow: 0; 
+    /* Width and Height are default from Figma due Hug property */
+
+}
+.profile_icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 15px;
+    flex: none;
+    flex-grow: 0;
+    width: 50px;
+    height: 45px;
+}
+.profile_image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    gap: 1px;
+    background: var(--Border);
+    border-radius: 12px;
+    flex: none;
+    align-self: stretch;
+    flex-grow: 1;
+    /* Width and Height are default due to Fill property */
+}
+.k_1{
+    font-family: var(--Font-Family-2);
+    font-style: normal;
+    font-weight: var(--Font-Weight-1);
+    font-size: var(--Navbar-Text);
+    line-height: 40px;
+    color: var(--Default-Font);
+    flex: none;
+    flex-grow: 0;
+    /* Width and Height are default from Figma due Hug property */
+}
+.dropdown{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 15px;
+    flex: none;
+    flex-grow: 0;
+    width: 21px;
+    height: 13px;
+    cursor: pointer;
+}
+.dropdown_icon{
+    flex: none;
+    align-self: stretch;
+    flex-grow: 1;
+}
+.search_block{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar_component {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 16px;
+        flex: none;
+        align-self: stretch;
+        flex-grow: 0;
+        /* Height and Width are default from Figma due Hug property */
+    }
+
+    .navbar_element {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 20px;
+        gap: 43.58px;
+        border-bottom: 1px solid var(--Stroke);
+        flex: none;
+        align-self: stretch;
+        flex-grow: 0;
+        height: 49px;
+        /*Width is default from Figma due Fill property */
+
+    }
+
+    .logo_image_text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 3px;
+        flex: none;
+        flex-grow: 0;
+        /*Width and Height are default from Figma due Hug property */
+
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 3px;
+        flex: none;
+        flex-grow: 0;
+        width: 16px;
+        height: 16px;
+    }
+    .logo_image{
+        width: 16px;
+        height: 16px;
+        flex: none;
+        align-self: stretch;
+        flex-grow: 1;
+    }
+
+    .logo_text {
+        font-family: var(--Font-Family-2);
+        font-style: normal;
+        font-weight: var(--Font-Weight-1);
+        font-size: var(--Navbar-Text-Sm);
+        line-height: 17px;
+        color: var(--Heading-Font);
+        flex: none;
+        flex-grow: 0;
+        /* Width and Height are default due to Hug Property*/
+    }
+
+
+    .search_bar {
+        display: none !important;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 6.54px;
+        flex: none;
+        flex-grow: 0;
+    }
+
+    .profile_icon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 7px;
+        flex: none;
+        flex-grow: 0;
+        width: 25px;
+        height: 25px;
+    }
+    .profile_image{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1.74312px;
+        gap: 0.44px;
+        background: var(--Border);
+        border-radius: 5.22935px;
+        flex: none;
+        align-self: stretch;
+        flex-grow: 1;
+        /* Width and Height are default due to Fill property */
+    }
+
+    .k_1 {
+        font-family: var(--Font-Family-2);
+        font-style: normal;
+        font-weight: var(--Font-Weight-1);
+        font-size: var(--Navbar-Text-Sm);
+        line-height: 17px;
+        flex: none;
+        flex-grow: 0;
+    }
+
+    .dropdown{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 15px;
+        flex: none;
+        flex-grow: 0;
+        width: 9.15px;
+        height: 5.47px;
+    }
+    .dropdown_icon{
+        flex: none;
+        align-self: stretch;
+        flex-grow: 1;
+    }
+
+    .search_block {
+        /* visibility: visible; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 20px;
+        flex: none;
+        align-self: stretch;
+        flex-grow: 0;
+        /* Width and Height are default due to Fill and Hug property */
+    }
+    .search_bar_sm{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 14px;
+        border: 1px solid var(--Border);
+        border-radius: 20px;
+        flex: none;
+        align-self: stretch;
+        flex-grow: 0;
+        height: 38px;
+        /* Width is default due to Fill property */
+    }
+
+    .search_text_sm {
+        font-family: var(--Font-Family-2);
+        font-style: normal;
+        font-weight: var(--Font-Weight-1);
+        font-size: var(--Navbar-Text-Sm);
+        line-height: 17px;
+        color: var(--Secondary-Font);
+        flex: none;
+        flex-grow: 0;
+        border: none; /* Added for Input tag */
+        outline: none;
+        width: 80%;
+    }
+
+    .search_icon_sm {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        /* gap: 165px; */
+        flex: none;
+        flex-grow: 0;
+        width: 18px;
+        height: 18px;
+    }
+    .search_image{
+        width: 18px;
+        height: 18px;
+        flex: none;
+        align-self: stretch;
+        flex-grow: 1;
+    }
+}

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+:root{
+
+    /* Color */
+
+    --Border:#0768B5;
+    --Stroke:#898989;
+    --Card-Background:#ffffff;
+    --Icon-Background:#F1EFEF;
+    
+    --Default-Font:#2a2a2a;
+    --Secondary-Font:#504f4f;
+    --Heading-Font:#0768b5;
+    --Page-Font:#ffffff;
+
+
+    /* Typography for Desktop */
+    --Navbar-Text:35px;
+    --Heading-1:45px; 
+    --Heading-2:25px; 
+    --Body-Default:22px;
+    --Body-Small:18px;
+
+    /* Font */
+    --Font-Family-1: 'Poppins'; /*For sub-heading or text-description  */
+    --Font-Family-2: 'Rubik';  /* For Heading or Title */
+
+    --Font-Weight-1: 600;
+    --Font-Weight-2: 500;
+    --Font-Weight-3: 400;
+}

@@ -1,0 +1,105 @@
+.pagination_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 40px 0px;
+    gap: 20px;
+    flex: none;
+    align-self: stretch;
+    flex-grow: 0;
+    /* Width and Height are default from figma due to Fill and Hug Property */
+}
+
+.active_page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    background: var(--Border);
+    border-radius: 100px;
+    flex: none;
+    flex-grow: 0;
+    width: 50px;
+    height: 50px;
+    color: var(--Page-Font);
+    cursor: pointer;
+}
+
+.inactive_page {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    border: 1px solid var(--Border);
+    border-radius: 100px;
+    flex: none;
+    flex-grow: 0;
+    width: 50px;
+    height: 50px;
+    color: var(--Heading-Font);
+    cursor: pointer;
+}
+
+.pageNumber {
+    font-family: var(--Font-Family-2);
+    font-style: normal;
+    font-weight: var(--Font-Weight-2);
+    font-size: var(--Heading-2);
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.next_page,
+.prev_page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    border: 1px solid var(--Border);
+    border-radius: 100px;
+    flex: none;
+    flex-grow: 0;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.next_icon,
+.prev_icon {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    width: 7px;
+    height: 12px;
+    flex: none;
+    flex-grow: 0;
+}
+
+.icon {
+    flex: none;
+    align-self: stretch;
+    flex-grow: 1;
+    /* Width and Height are default from figma due to Fill and Hug Property */
+}
+
+.prev_icon {
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+@media screen and (max-width:768px) {
+    .pagination_block {
+        display: none !important;
+    }
+}
