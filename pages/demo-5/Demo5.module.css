@@ -7,15 +7,17 @@
 
 
 .top_image{
-    width: 1090px;
-    height: 500px;
-    position: fixed;
-    top: 200px;
-    z-index: 1;
-}
-.image{
+    text-align: center;
     width: 100%;
     height: 100%;
+    position: fixed;
+    top: 180px;
+    z-index: 1;
+    background-color: var(--Card-Background);
+}
+.image{
+    width: 1090px;
+    height: 500px;
 }
 .sticky{
   display: flex;
