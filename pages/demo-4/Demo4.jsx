@@ -5,6 +5,8 @@ import Story from "../story/Story";
 import Navbar from "../../component/navbar/Navbar";
 import icon from "../../assets/image/science.png";
 import Image from "next/image";
+import topImage from "../../assets/image/img1.png";
+
 
 
 const Demo4 = () => {
@@ -14,8 +16,8 @@ const Demo4 = () => {
         <div className={css.main_section}>
             <Navbar />
             <div className={css.top_image}>
-                <img
-                    src="https://im.rediff.com/sports/2022/nov/29ron1.jpg?w=670&h=900"
+                <Image
+                    src={topImage}
                     alt="top-image"
                     className={css.image}
                 />

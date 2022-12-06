@@ -1,3 +1,5 @@
+
+
 .parallax_container {
   display: flex;
   flex-direction: column;
@@ -18,7 +20,7 @@
   height: 545px;
   border: 4px solid var(--Border);
   margin-top: 20px;
-  background-image: url("https://im.rediff.com/sports/2022/dec/01messi-fans1.jpg?w=670&h=900");
+  background-image: url('../../assets/image/img1.png');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

@@ -5,6 +5,7 @@ import { getMoreStories } from "../../api/more";
 import Navbar from "../../component/navbar/Navbar";
 import icon from "../../assets/image/science.png";
 import Image from "next/image";
+import topImage from "../../assets/image/img1.png";
 
 const Parallax = () => {
   const moreStory = getMoreStories();
@@ -12,7 +13,16 @@ const Parallax = () => {
   return (
     <div className={style.parallax_container}>
       <Navbar />
-      <div className={style.ele_image}></div>
+      <div
+        className={style.ele_image}
+        style={{
+          backgroundImage: `url(${topImage})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          backgroundPosition:"center",
+          backgroundSize:"cover",
+        }}
+      ></div>
 
       <div className={style.card_ele}>
         <div className={style.card_title}>

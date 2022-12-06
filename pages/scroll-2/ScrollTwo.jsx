@@ -5,6 +5,8 @@ import MoreStory from "../moreStory/MoreStory";
 import Navbar from "../../component/navbar/Navbar";
 import icon from "../../assets/image/science.png";
 import Image from "next/image";
+import topImage from "../../assets/image/img1.png";
+
 
 const ScrollTwo = () => {
   const moreStory = getMoreStories();
@@ -15,9 +17,9 @@ const ScrollTwo = () => {
       <div className={css.scroll_2}>
         <div className={css.block_ele}>
           <div className={css.ele_image_1}>
-            <img
-              src="https://im.rediff.com/sports/2022/nov/29ron1.jpg?w=670&h=900"
-              alt=""
+            <Image
+              src={topImage}
+              alt="top-Icon"
               className={css.image}
             />
           </div>
