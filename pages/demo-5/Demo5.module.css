@@ -17,7 +17,9 @@
 }
 .image{
     width: 1090px;
-    height: 500px;
+    height: 545px;
+    border: 4px solid var(--Border);
+
 }
 .sticky{
   display: flex;
