@@ -14,6 +14,9 @@ const ScrollTwo = () => {
   return (
     <div className={css.main}>
       <Navbar />
+      <div className={css.full_story_heading}>
+        <div className={css.full_story_text}>Full Story</div>
+      </div>
       <div className={css.scroll_2}>
         <div className={css.block_ele}>
           <div className={css.ele_image_1}>
@@ -52,7 +55,7 @@ const ScrollTwo = () => {
           </div>
         </div>
       </div>
-      
+
       <div className={css.more_stories_heading}>
         <div className={css.icon_section}>
           <Image src={icon} alt="icon" className={css.icon} />

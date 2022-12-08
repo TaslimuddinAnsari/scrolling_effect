@@ -38,11 +38,12 @@ const Home = () => {
       <h3><Link href={'/parallax/Parallax'}>Parallax-design</Link></h3>
       <h3><Link href={'/demo-4/Demo4'}>Card-Sticky</Link></h3>
       <h3><Link href={'/demo-5/Demo5'}>Image-and-Card-Sticky</Link></h3>
+      <h3><Link href={'/two-block/TwoBlock'}>Two-Block</Link></h3>
 
       {/* <h2><Link href='/aos/AOS' >AOS</Link></h2> */}
-      <div class="container" id="container">
-        <div class="square square-1"></div>
-        <div class="square square-2"></div>
+      <div className="container" id="container">
+        <div className="square square-1"></div>
+        <div className="square square-2"></div>
       </div>
     </div>
   );

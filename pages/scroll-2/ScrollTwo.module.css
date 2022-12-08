@@ -2,10 +2,35 @@
   display: flex;
   flex-direction: column;
 }
+.full_story_heading {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px 40px 10px 40px;
+  border-bottom: 1px solid var(--Stroke);
+  flex: none;
+  align-self: stretch;
+  flex-grow: 0;
+
+}
+
+.full_story_text {
+  font-family: var(--Font-Family-2);
+  font-style: normal;
+  font-weight: var(--Font-Weight-1);
+  font-size: var(--Heading-1);
+  line-height: 50px;
+  letter-spacing: 0.02em;
+  color: var(--Heading-Font);
+  flex: none;
+  flex-grow: 0;
+}
 .scroll_2 {
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-top: 40px;
   position: relative;
   width: 100%;
 }

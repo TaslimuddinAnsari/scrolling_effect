@@ -5,13 +5,36 @@
     align-items: center;
 }
 
+.full_story_heading {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px 40px 10px 40px;
+  border-bottom: 1px solid var(--Stroke);
+  flex: none;
+  align-self: stretch;
+  flex-grow: 0;
+  /* z-index: 1; */
+}
 
+.full_story_text {
+  font-family: var(--Font-Family-2);
+  font-style: normal;
+  font-weight: var(--Font-Weight-1);
+  font-size: var(--Heading-1);
+  line-height: 50px;
+  letter-spacing: 0.02em;
+  color: var(--Heading-Font);
+  flex: none;
+  flex-grow: 0;
+}
 .top_image{
     text-align: center;
     width: 100%;
     height: 100%;
     position: fixed;
-    top: 180px;
+    top: 250px;
     z-index: 1;
     background-color: var(--Card-Background);
 }

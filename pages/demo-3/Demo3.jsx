@@ -14,6 +14,9 @@ const Demo3 = () => {
   return (
     <div className={style.main_div}>
       <Navbar />
+      <div className={style.full_story_heading}>
+        <div className={style.full_story_text}>Full Story</div>
+      </div>
       <div className={style.top_content}>
         <div className={style.image_section}>
           <Image

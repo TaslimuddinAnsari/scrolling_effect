@@ -8,11 +8,14 @@ import Image from "next/image";
 
 
 const Demo5 = () => {
-    const moreStory = getMoreStories();
+  const moreStory = getMoreStories();
 
   return (
     <div className={css.main_container}>
       <Navbar />
+      <div className={css.full_story_heading}>
+        <div className={css.full_story_text}>Full Story</div>
+      </div>
       <div className={css.top_image}>
         <img
           src="https://im.rediff.com/sports/2022/nov/29ron1.jpg?w=670&h=900"

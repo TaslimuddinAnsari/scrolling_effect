@@ -13,6 +13,9 @@ const Parallax = () => {
   return (
     <div className={style.parallax_container}>
       <Navbar />
+      <div className={style.full_story_heading}>
+            <div className={style.full_story_text}>Full Story</div>
+      </div>
       <div
         className={style.ele_image}
         style={{

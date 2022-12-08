@@ -8,13 +8,15 @@ import Image from "next/image";
 import topImage from "../../assets/image/img1.png";
 
 
-
 const Demo4 = () => {
     const moreStory = getMoreStories();
 
     return (
         <div className={css.main_section}>
             <Navbar />
+            <div className={css.full_story_heading}>
+                <div className={css.full_story_text}>Full Story</div>
+            </div>
             <div className={css.top_image}>
                 <Image
                     src={topImage}
