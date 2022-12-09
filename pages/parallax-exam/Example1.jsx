@@ -8,7 +8,6 @@ const Example1 = () => {
         className='background' />
         {/* <img src='https://tse4.mm.bing.net/th?id=OIP.ntPkhMKhtgr4ZYgrAUycMAHaE7&pid=Api&P=0' 
         className='foreground' /> */}
-        <h1 className='heading_text'>Welcome!</h1>
       </header>
       <section>
         <div className='description'>

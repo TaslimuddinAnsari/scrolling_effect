@@ -14,21 +14,21 @@ const TwoBlock = () => {
     return (
         <div className={css.main_block}>
             <Navbar />
-            <div className={css.parallax_block}>
-                <div className={css.top_block}>
-                    {/* <Navbar /> */}
-                    <div className={css.full_story_heading}>
-                        <div className={css.full_story_text}>Full Story</div>
-                    </div>
-                    <div className={css.image_section}>
-                        <Image
-                            src={topImage} alt="top-image"
-                            className={css.top_img}
-                        />
-                    </div>
+            
+            <div className={css.top_block}>
+                <div className={css.full_story_heading}>
+                    <div className={css.full_story_text}>Full Story</div>
                 </div>
+                <div className={css.image_section}>
+                    <Image
+                        src={topImage} alt="top-image"
+                        className={css.top_img}
+                    />
+                </div>
+            </div>
 
-                <div className={css.bottom_block}>
+            <div className={css.bottom_block}>
+                <div className={css.paralla_div}>
                     <div className={css.card_block}>
                         <div className={css.card_title}>
                             "Treasure Of Love": Boy Offers Piggy Bank To Rahul Gandhi For Bharat
