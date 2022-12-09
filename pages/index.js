@@ -39,6 +39,7 @@ const Home = () => {
       <h3><Link href={'/demo-4/Demo4'}>Card-Sticky</Link></h3>
       <h3><Link href={'/demo-5/Demo5'}>Image-and-Card-Sticky</Link></h3>
       <h3><Link href={'/two-block/TwoBlock'}>Two-Block</Link></h3>
+      <h3><Link href={'/parallax-exam/ParallaxExample'}>Parallax-test</Link></h3>
 
       {/* <h2><Link href='/aos/AOS' >AOS</Link></h2> */}
       <div className="container" id="container">
