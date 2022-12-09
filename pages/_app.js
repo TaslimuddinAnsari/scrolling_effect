@@ -1,5 +1,7 @@
 import "../styles/global.css";
 import "../styles/variables.css";
+import "../styles/common.css";
+
 
 import { useEffect } from "react";
 import AOS from 'aos';
