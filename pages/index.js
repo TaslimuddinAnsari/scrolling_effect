@@ -41,6 +41,7 @@ const Home = () => {
       <h3><Link href={'/two-block/TwoBlock'}>Two-Block</Link></h3>
       <h3><Link href={'/parallax-exam/ParallaxExample'}>Parallax-test</Link></h3>
       <h3><Link href={'/parallax-exam/Example1'}>Parallax-Example2</Link></h3>
+      <h3><Link href={'/onClick-hover/OnClickHover'}>onClick</Link></h3>
 
       {/* <h2><Link href='/aos/AOS' >AOS</Link></h2> */}
       <div className="container" id="container">
