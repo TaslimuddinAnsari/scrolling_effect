@@ -16,7 +16,7 @@ const Navbar = () => {
         </div>
         <div className={css.profile}>
             <Image src={require('../../assets/image/profile_image.png')}
-              alt='search-icon' className={css.profile_image} />
+              alt='search-icon' className={css.profile} />
         </div>
       </div>
       <div className={css.search_block}>
