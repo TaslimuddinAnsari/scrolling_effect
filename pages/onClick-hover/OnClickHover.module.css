@@ -54,7 +54,17 @@
     padding: 20px 20px 20px 20px;
     align-self: center;
     background-color: var(--Card-Background);
-    margin-top: -10.5rem;
+    margin-top: -8.5rem;
+}
+.card_block:hover{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 1090px;
+  padding: 20px 20px 20px 20px;
+  align-self: center;
+  background-color: var(--Card-Background);
+  margin-top:0rem;
 }
 .card_title {
     font-family: var(--Font-Family-2);

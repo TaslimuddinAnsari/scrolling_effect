@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import css from './OnClickHover.module.css';
 import Navbar from '../../component/navbar/Navbar';
 import Image from 'next/image';
@@ -10,6 +10,18 @@ import MoreStory from '../moreStory/MoreStory';
 
 const OnClickHover = () => {
     const moreStory = getMoreStories();
+    useEffect(() => {
+        var windowHeight = window.innerHeight;
+        var windowWidth = window.innerWidth;
+        var scrollArea = 1000 - windowHeight;
+        var card = document.getElementsByClassName("card_block")[0];
+    
+        window.addEventListener('scroll', function() {
+          var scrollTop = window.pageYOffset || window.scrollTop;
+          var scrollPercent = scrollTop / scrollArea || 0;
+          card.style.margin = 136 - scrollPercent * window.innerWidth * 0.001 + "px";
+        });
+      }, [])
 
     return (
         <div className={css.main_section}>
