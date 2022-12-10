@@ -44,7 +44,7 @@ const OnClickHover = () => {
                         <div className={css.writer_text}>By Writer</div>
                         <div className={css.date_text}>Nov 02, 2022</div>
                     </div>
-                    <div className={css.news_details}>
+                    <div className={css.news_description}>
                         Congress leader Rahul Gandhi on Sunday said sacrifice and
                         selflessness are values inculcated during childhood after a boy gave
                         his piggy bank to him during the Bharat Jodo Yatra in Madhya

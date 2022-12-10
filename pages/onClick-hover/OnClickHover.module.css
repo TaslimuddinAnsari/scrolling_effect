@@ -98,7 +98,7 @@
     line-height: 30px;
     color: var(--Secondary-Font);
   }
-  .news_details {
+  .news_description {
     font-family: var(--Font-Family-1);
     font-style: normal;
     font-weight: var(--Font-Weight-3);
