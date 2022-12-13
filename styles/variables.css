@@ -23,6 +23,12 @@
     --Body-Default:22px;
     --Body-Small:18px;
 
+    /* Typography for Mobile */
+    --Navbar-Text-Sm:18px;
+    --Heading-Sm:24px; 
+    --Body-Default-Sm:12px;
+
+
     /* Font */
     --Font-Family-1: 'Poppins'; /*For sub-heading or text-description  */
     --Font-Family-2: 'Rubik';  /* For Heading or Title */

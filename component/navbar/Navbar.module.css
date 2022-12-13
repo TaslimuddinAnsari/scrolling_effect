@@ -150,13 +150,13 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 0px 20px;
-        gap: 43.58px;
+        padding: 5px 20px;
+        gap: 44px;
         border-bottom: 1px solid var(--Stroke);
         flex: none;
         align-self: stretch;
         flex-grow: 0;
-        height: 49px;
+        /* height: 49px; */
         /*Width is default from Figma due Fill property */
 
     }
@@ -182,6 +182,7 @@
         color: var(--Heading-Font);
         flex: none;
         flex-grow: 0;
+        align-self: center;
         /* Width and Height are default due to Hug Property*/
     }
 
@@ -195,9 +196,11 @@
         justify-content: center;
         align-items: center;
         padding: 0px;
-        gap: 6.54px;
+        gap: 0px;
         flex: none;
         flex-grow: 0;
+        width: 35px;
+        height: 35px;
     }
 
 
@@ -206,8 +209,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 1.74312px;
-        gap: 0.44px;
+        padding: 0px;
+        gap: 0px;
         background: var(--Border);
         border-radius: 50px;
         flex: none;
@@ -249,7 +252,7 @@
         font-style: normal;
         font-weight: var(--Font-Weight-1);
         font-size: var(--Navbar-Text-Sm);
-        line-height: 17px;
+        line-height: 18px;
         color: var(--Secondary-Font);
         flex: none;
         flex-grow: 0;

@@ -1,0 +1,113 @@
+.conatiner{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    flex: none;
+    align-self: stretch;
+    flex-grow: 0;
+    /* Width and Height are default from figma due to Fill and Hug property */
+}
+.full_story_heading{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 40px;
+    border-bottom: 1px solid var(--Stroke);
+    flex: none;
+    align-self: stretch;
+    flex-grow: 0;
+    /* Width and Height are default from figma due to Fill and Hug property */
+}
+.full_story_text{
+    font-family: var(--Font-Family-2);
+    font-style: normal;
+    font-weight: var(--Font-Weight-1);
+    font-size: var(--Heading-1);
+    line-height: 50px; 
+    letter-spacing: 0.02em;
+    color: var(--Heading-Font);
+    flex: none;
+    flex-grow: 0;
+    /* Width and Height are default from figma due to Hug property */
+}
+
+.more_stories_heading{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 40px;
+    border-bottom: 1px solid var(--Stroke);
+    flex: none;
+    align-self: stretch;
+    flex-grow: 0;
+    /* Width and Height are default due to Fill and Hug Property */
+}
+.more_stories_text{
+    font-family: var(--Font-Family-2);
+    font-style: normal;
+    font-weight: var(--Font-Weight-1);
+    font-size: var(--Heading-1);
+    line-height: 50px;
+    letter-spacing: 0.02em;
+    color: var(--Heading-Font);
+    flex: none;
+    flex-grow: 0;
+}
+.icon_section{
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .conatiner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 16px;
+        flex: none;
+        flex-grow: 1;
+    }
+    .full_story_heading{
+        align-items: center;
+        padding: 5px 20px;
+        gap: 10px;
+        /* Width and Height are default from figma due to Fill and Hug property */
+    }
+    .full_story_text{
+        font-size: var(--Heading-Sm);
+        line-height: 27px;
+        /* Width and Height are default from figma due to Hug property */
+    }
+    .icon_section{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        flex: none;
+        flex-grow: 0;
+        width: 35px;
+        height: 35px;
+    }
+    .icon{
+        flex: none;
+        align-self: stretch;
+        flex-grow: 1;
+        /* Width and Height are default from figma due to Fill property */
+    }
+    .more_stories_heading{
+        align-items: center;
+        padding: 5px 21px;
+        gap: 10px;
+        /* Width and Height are default from figma due to Hug property */
+    }
+    .more_stories_text{
+        font-size: var(--Heading-Sm);
+        line-height: 27px;
+        /* Width and Height are default from figma due to Hug property */
+    }
+}
